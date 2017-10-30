@@ -1,4 +1,4 @@
 
-set(CN_PROJECT_NAME "Iridium-qt")
+set(CN_PROJECT_NAME "Iridium Wallet")
 set(CN_CURRENCY_DISPLAY_NAME "Iridium")
 set(CN_CURRENCY_TICKER "IRD")
