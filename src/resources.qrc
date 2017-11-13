@@ -32,5 +32,7 @@
         <file alias="splash">images/splash.png</file>
         <file alias="cryptonote">images/cryptonote.png</file>
         <file alias="clock">images/clock.gif</file>
+        <file alias="logo">images/Logo_alpha.png</file>
     </qresource>
+    <qresource prefix="/"/>
 </RCC>

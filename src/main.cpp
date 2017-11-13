@@ -88,7 +88,6 @@ int main(int argc, char* argv[]) {
     if (WalletAdapter::instance().isOpen()) {
       WalletAdapter::instance().close();
     }
-
     NodeAdapter::instance().deinit();
   });
 

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>592</width>
-    <height>240</height>
+    <height>320</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,29 +19,30 @@
   <property name="minimumSize">
    <size>
     <width>592</width>
-    <height>240</height>
+    <height>320</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>592</width>
-    <height>240</height>
+    <height>320</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>About %1</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0">
+   <item alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="m_logo">
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;img src=&quot;:/images/logo&quot; width=150 /&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
    <item>
     <widget class="QLabel" name="m_aboutLabel">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
      <property name="text">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Iridium GUI Wallet Version v2.0.0&lt;/p&gt;&lt;p&gt;Iridium is the community controlled next generation anonymous cryptocurrency based on CryptoNote.&lt;/p&gt;&lt;p&gt;Copyright (c) 2009-2017. Bitcoin Developers&lt;/p&gt;&lt;p&gt;Copyright (c) 2012-2017. CryptoNote Developers &lt;/p&gt;&lt;p&gt;Copyright (c) 2017-2017. The Iridium Community&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://opensource.org/licenses/MIT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://cryptonote.org/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;https://iridium.cc&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Iridium GUI Wallet Version v2.0.2&lt;/p&gt;&lt;p&gt;Iridium is the community controlled next generation anonymous cryptocurrency based on CryptoNote.&lt;/p&gt;&lt;p&gt;Website : &lt;a href=&quot;http://ird.cash&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://ird.cash&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;© 2009-2017. Bitcoin Developers&lt;/p&gt;&lt;p&gt;© 2012-2017. CryptoNote Developers &lt;/p&gt;&lt;p&gt;© 2017-2017. The Iridium Community&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://opensource.org/licenses/MIT&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
