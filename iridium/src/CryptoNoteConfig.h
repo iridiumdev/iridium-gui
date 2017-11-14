@@ -97,14 +97,8 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 
 
 const std::initializer_list<const char*> SEED_NODES = {
-        "104.234.216.118:12007",
-        "108.61.196.136:12007",
-        "45.32.71.24:12007",
-        "45.63.119.236:12007",
-        "13.92.140.240:12007",
-        "52.14.88.78:12007",
-        "66.42.209.128:12007",
-        "74.218.51.222:12007"
+        "96.10.113.218:12007",
+        "83.197.6.152:7080"
 };
 
 struct CheckpointData {
@@ -116,14 +110,27 @@ struct CheckpointData {
 __attribute__((unused))
 #endif
 
-// You may add here other checkpoints using the following format:
-// {<block height>, "<block hash>"},
-const std::initializer_list<CheckpointData> CHECKPOINTS = {
-  { 1000, "d1183b92c35f71302cb7539f457fd696dc8d70e5e13d98d66f1c9b3d4449273d" },
-  { 2000, "4eeaea976cd97aef9d43cf467097540448a58b85fb4350668f17acc45d7d9538" },
-  { 3000, "6c2464fe57375fdcd7f33bc00605edc7170c722169d4ae02d615648be0ad5d22" },
-  { 4000, "a2edb34ef3906f5db4887f27c0a16b246339a6703ad5ccd08df9a57344b31094" },
-  { 5000, "f58df0e7264ebebddc41656f362dfd6364a2091e5dacd7f70b40ffb3b1b4c752" },
+ const std::initializer_list<CheckpointData> CHECKPOINTS = {
+        {1100,"afdbee5a9f28a4c0a78d6a18dbac793e51e2776fece60848954b8e1ec160cda1"},
+        {2200,"5e7e150df20e63be205f06c6a6f729f7b46c747229acf2e667485b0d2639c649"},
+        {3300,"791928b5c3c89cee8ada3b289b5ae1fd85a1a023b10b2c932278860f60e10ad4"},
+        {4400,"c2f768a5ddc200a26498069785d0b7044f7fb7a899ed9c60c99e3808eea7ff18"},
+        {5500,"bf0b357c23d4924a29b9336ea68302e3c058d44ff25153e5e717198874201df3"},
+        {6600,"19be10beebd3b587acbd2b4604d7bfe775e1b7641dde36f67f0f8cb156f9ff38"},
+        {7700,"def4a690c95f49ffb963504773d575b3979adc77a314f24966f0aa95e03aec3c"},
+        {8800,"2bd79ba2a0fc988f902e0353ce41adaebe7e707082945eb87dd5841c9ca47ed1"},
+        {9900,"8eea03ce377015ba5c069c56581c237b4a600b525b60137b8f13b748cd7116e8"},
+        {10100,"81e9f16a8e36266fc1bd5f786fb2a9612f710c9c2d964978025d34eb9fe25899"},
+        {11000,"f674ec1545ec21172f7299bd79c7f80f70e02df12b896b5d18307d1cdee67f80"},
+        {22000,"05f59eebe82c297beffa73abebca68d2bedeb40a13381d498e2355e9a1625127"},
+        {33000,"0569528c3c146ed11bf6029818b90706314ffcd35ae4ecac9dbfb053a21910e7"},
+        {34000,"0fc783c527e689de9c778a11d401953ffe345771d41caeb1fb8d3b00bbfb8c30"},
+        {34100,"862f3b5b84daab70f895a138ff2d107123baacee3e273dfc3aeac3ed7f969869"},
+        {34200,"1ba1c79f6ff1d7cd128b75293dd9779c6802f3b293aee44f2c7a60d525975d9c"},
+        {34300,"9c63b1059b4d84055442874a3b8913598b04dfb36ea48049dd66227d10c250a0"},
+        {34400,"30ac2f1f686aa6578b65bc739223691e8613e1d4037a2c74f26ae656c0abce66"},
+        {34500,"e3585f18e09ab1bcd81f35d7f50573a28484e26412e302675a7a5eb488547835"},
+        {34509,"3e038974697dba95796a3897bc02e406c942f6c87915f2bfa2800dd0957c6586"}
 };
 } // CryptoNote
 
