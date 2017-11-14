@@ -69,7 +69,7 @@ void MainWindow::connectToSignals() {
 }
 
 void MainWindow::initUi() {
-  setWindowTitle(QString("%1 Wallet %2").arg(CurrencyAdapter::instance().getCurrencyDisplayName()).arg(Settings::instance().getVersion()));
+  setWindowTitle(QString("%1 Wallet").arg(CurrencyAdapter::instance().getCurrencyDisplayName()));
 #ifdef Q_OS_WIN32
   if (QSystemTrayIcon::isSystemTrayAvailable()) {
     m_trayIcon = new QSystemTrayIcon(QPixmap(":images/cryptonote"), this);

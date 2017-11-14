@@ -118,7 +118,7 @@ bool Settings::isEncrypted() const {
 }
 
 QString Settings::getVersion() const {
-  return GIT_REVISION;
+  return LABEL_VERSION;
 }
 
 bool Settings::isStartOnLoginEnabled() const {
