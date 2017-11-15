@@ -4,15 +4,11 @@ include(CryptoNoteWallet.cmake)
 project(${CN_PROJECT_NAME})
 
 include( MunkeiVersionFromGit.cmake )
-version_from_git()
+version_from_git(LOG ON)
 
 execute_process(COMMAND git log -1 --pretty=format:%h
 WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 OUTPUT_VARIABLE GIT_REVISION)
-
-execute_process(COMMAND git log -1 --pretty=format:%h
-        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-        OUTPUT_VARIABLE GIT_REVISION)
 
 set(CRYPTONOTE_LIB iridium)
 
@@ -41,7 +37,12 @@ configure_file("iridium/src/version.h.in" "version.h")
 configure_file("src/CryptoNoteWalletConfig.h.in" "CryptoNoteWalletConfig.h")
 
 add_definitions(-DGIT_REVISION=\"${GIT_REVISION}\")
-add_definitions(-DVERSION_VERSION=\"${VERSION_MAJOR}\")
+add_definitions(-DVERSION_VERSION=\"${VERSION}\")
+set(LABEL_VERSION "${DEC_VER} build ${GIT_REVISION}")
+add_definitions(-DLABEL_VERSION=\"${LABEL_VERSION}\")
+
+
+message(STATUS "LABEL_VERSION ${LABEL_VERSION}")
 
 set(CMAKE_AUTOMOC ON)
 
